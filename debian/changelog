@@ -1,0 +1,45 @@
+viewnior (1.6-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.6 (Closes: #785542)
+
+ -- Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>  Wed, 23 Dec 2015 15:01:57 +0100
+
+viewnior (1.5-2) unstable; urgency=medium
+
+  * Added --parallel build (Closes: #802277)
+  * Menu file removed
+
+ -- Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>  Thu, 29 Oct 2015 09:14:02 +0100
+
+viewnior (1.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.5
+  * Bump standards to 3.9.6, no changes needed
+  * Fix package-contains-timestamped-gzip by adding -9n to gzip in d/rules
+  * d/copyright: removed file ltmain.sh which is no longer present
+  * Patch add-keyswords-desktop.patch removed, changes merged upstream
+  * Added d/gbp.conf 
+
+ -- Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>  Tue, 12 May 2015 15:54:37 +0200
+
+viewnior (1.4-2) unstable; urgency=medium
+
+  [ Laszlo Kajan ]
+  * rm old watch line
+  * ignoring generated files
+
+  [ Dariusz Dwornikowski ]
+  * Copyright fixed, removed changelog from docs, changelog handling in rules
+  * wrap-and-sorted debian/control, debian/copyright
+  * Deleted ignored files
+  * Dropped build-depends on libexiv2-12, thanks Colin Watson (Closes: #756489)
+  * Fixed debian/watch file 
+  * Patch added to add _Keywords to desktop file
+
+ -- Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>  Sat, 02 Aug 2014 12:23:55 +0200
+
+viewnior (1.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #582090)
+
+ -- Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>  Fri, 07 Feb 2014 13:03:56 +0100

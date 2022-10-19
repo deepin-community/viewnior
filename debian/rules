@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@  --with autoreconf --parallel
+
+override_dh_auto_build:
+	dh_auto_build -- LDFLAGS="$(LDFLAGS) -lm"
+
+override_dh_installchangelogs:
+	dh_installchangelogs
+	cp ChangeLog-20090517 debian/viewnior/usr/share/doc/viewnior/changelog
+	gzip -9n debian/viewnior/usr/share/doc/viewnior/changelog
+

@@ -1,0 +1,31 @@
+Source: viewnior
+Section: graphics
+Priority: optional
+Maintainer: Dariusz Dwornikowski <dariusz.dwornikowski@cs.put.poznan.pl>
+Build-Depends:
+ debhelper (>= 9),
+ dh-autoreconf,
+ intltool (>= 0.35.0),
+ libexiv2-dev,
+ libgtk2.0-dev
+Standards-Version: 3.9.6
+Homepage: http://xsisqox.github.io/Viewnior/
+Vcs-Git: git://anonscm.debian.org/collab-maint/viewnior.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/viewnior.git
+
+Package: viewnior
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: simple, fast and elegant image viewer
+ This is Viewnior, an image viewer program. Created to be simple, fast
+ and elegant. Its minimalistic interface provides more screenspace for
+ your images. Among its features are:
+ .
+  * Fullscreen & Slideshow
+  * Rotate, flip, crop, save, delete images
+  * Animation support
+  * Browse only selected images
+  * Navigation window
+  * Set image as wallpaper (under GNOME, Fluxbox and LXDE)
+  * Simple interface
+  * Configurable mouse actions
